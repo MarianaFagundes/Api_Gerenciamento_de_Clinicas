@@ -6,10 +6,7 @@ create table consultas(
     data datetime not null,
 
     primary key (id),
-    constraint fk_consultas_medico_id  foreign key(medico_id) references medicos(id),
-    constraint fk_consultas_paciente_id  foreign key (paciente_id) references pacientes (id)
+    constraint fk_consultas_medico_id foreign key(medico_id) references medicos(id),
+    constraint fk_consultas_paciente_id foreign key (paciente_id) references pacientes (id)
 
     );
-
-	V8__create-table-motivo-cancelamento
-	alter table consultas add column motivo_cancelamento varchar(100);

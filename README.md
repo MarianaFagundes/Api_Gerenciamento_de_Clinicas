@@ -1,16 +1,30 @@
-# API de Gerenciamento de Clínicas
+# 🏥 API de Gerenciamento de Clínicas
 
-Projeto backend em Java usando Spring Boot, com operações CRUD para cadastro de médicos e pacientes.
+API REST em Java com Spring Boot para gerenciar médicos, pacientes e agendamentos.
 
-## Tecnologias
-- Java
+## ✨ Funcionalidades
+- CRUD de médicos
+- CRUD de pacientes
+- Agendar consultas
+- Validações com Bean Validation
+- Migração de banco com Flyway
+
+## 🛠️ Tecnologias
+- Java 17
 - Spring Boot
 - MySQL
+- JPA / Hibernate
+- Flyway
 
-## Como rodar
-1. Clone o repositório
-2. Configure o banco no `application.properties`
-3. Rode com `./mvnw spring-boot:run`
+## 🚀 Como rodar
+```bash
+git clone https://github.com/MarianaFagundes/api-gerenciamento-clinicas-java.git
+cd api-gerenciamento-clinicas-java
+# configure application.properties (DB, senha)
+./mvnw spring-boot:run
+📌 Status
+✅ API funcional
+🔜 Futuras metas: autenticação JWT + testes unitários
 
-## Autor
+👩‍💻 Autora
 Mariana Fagundes Rodrigues
